@@ -1,13 +1,17 @@
 <template>
   <h5>这个是 home 页面</h5>
+  <Count />
+  ===================================
   <Todolist />
   <button @click="loading">点击更换icon</button>
   <h5 @click="toggle">切换全屏</h5>
+
 
 </template>
 
 <script setup>
 import Todolist from "../components/Todolist.vue"
+import Count from "../components/Count.vue"
 import useFavicon from "../utils/useFavicon";
 import { useFullscreen } from '@vueuse/core';
 import { ref } from "@vue/reactivity";
